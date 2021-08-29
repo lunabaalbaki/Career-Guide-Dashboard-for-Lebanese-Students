@@ -23,7 +23,7 @@ df1=pd.read_csv('https://raw.githubusercontent.com/lunabaalbaki/Career-Guide-Das
 df2=pd.read_csv('https://raw.githubusercontent.com/lunabaalbaki/Career-Guide-Dashboard-for-Lebanese-Students/main/skill_importance.csv')
 df3=pd.read_csv('https://raw.githubusercontent.com/lunabaalbaki/Career-Guide-Dashboard-for-Lebanese-Students/main/tasks.csv')
 df5=pd.read_csv('https://raw.githubusercontent.com/lunabaalbaki/Career-Guide-Dashboard-for-Lebanese-Students/main/bright_oulook_onet.csv')
-df6=pd.read_csv('/Users/user/Desktop/Capstone_datasets/bright_oulook_onet.csv')
+df6=pd.read_csv('https://raw.githubusercontent.com/lunabaalbaki/Career-Guide-Dashboard-for-Lebanese-Students/main/Detailed_work_activities_tasks.csv')
 
 st.markdown(
         f"""
