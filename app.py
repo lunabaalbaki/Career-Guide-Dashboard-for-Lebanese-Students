@@ -77,7 +77,30 @@
 ###
 import streamlit as st
 from multiapp import MultiApp
-from apps import home, data, model # import your app modules here
+from apps import home, job_analysis, job_information # import your app modules here
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+import matplotlib.pyplot as plt
+from htbuilder import HtmlElement, div, ul, li, br, hr, a, p, img, styles, classes, fonts
+from htbuilder.units import percent, px
+from htbuilder.funcs import rgba, rgb
+import shap
+import plotly.graph_objects as go
+import chart_studio.plotly as py
+import plotly.figure_factory as ff
+import pandas as pd
+import numpy as np
+import scipy as sp
+import chart_studio.plotly as py
+from PIL import Image
+import plotly.express as px
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+import matplotlib.pyplot as plt
+
+import altair as alt
 
 app = MultiApp()
 
@@ -88,7 +111,7 @@ This multi-page app is using the [streamlit-multiapps](https://github.com/uprane
 
 # Add all your application here
 app.add_app("Home", home.app)
-app.add_app("Data", data.app)
-app.add_app("Model", model.app)
+app.add_app("Job Analysis", job_analysis.app)
+app.add_app("Model", job_information.app)
 # The main app
 app.run()
