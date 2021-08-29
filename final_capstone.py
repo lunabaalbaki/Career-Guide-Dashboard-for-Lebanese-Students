@@ -51,11 +51,11 @@ st.image('/Users/user/Desktop/capstone/line_separator.png',width= 1450)
 
 # st.markdown(f"<h2 style='text-align:center;' >{'Are you a Lebanese 🇱🇧  student struggling in choosing your career?'}</h2>", unsafe_allow_html=True)
 #Load Data
-df1=pd.read_csv('/Users/user/Desktop/Capstone_datasets/preprocessed_linkedin_jobs_25_08_21.csv')
-df2=pd.read_csv('/Users/user/Desktop/Capstone_datasets/skill_importance.csv')
-df3=pd.read_csv('/Users/user/Desktop/Capstone_datasets/tasks.csv')
-df5=pd.read_csv('/Users/user/Desktop/Capstone_datasets/Detailed_work_activities_tasks.csv')
-df6=pd.read_csv('/Users/user/Desktop/Capstone_datasets/bright_oulook_onet.csv')
+df1=pd.read_csv('preprocessed_linkedin_jobs_25_08_21.csv')
+df2=pd.read_csv('skill_importance.csv')
+df3=pd.read_csv('tasks.csv')
+df5=pd.read_csv('Detailed_work_activities_tasks.csv')
+df6=pd.read_csv('bright_oulook_onet.csv')
 
 
 
