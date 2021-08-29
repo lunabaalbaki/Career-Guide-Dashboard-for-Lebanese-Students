@@ -5,15 +5,12 @@ import matplotlib.pyplot as plt
 from htbuilder import HtmlElement, div, ul, li, br, hr, a, p, img, styles, classes, fonts
 from htbuilder.units import percent, px
 from htbuilder.funcs import rgba, rgb
-import shap
 from sklearn import datasets
 from sklearn.ensemble import RandomForestRegressor
 import plotly.graph_objects as go
 import chart_studio.plotly as py
 import plotly.figure_factory as ff
 import pandas as pd
-import numpy as np
-import scipy as sp
 import chart_studio.plotly as py
 from PIL import Image
 import plotly.express as px
