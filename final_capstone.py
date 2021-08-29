@@ -42,7 +42,7 @@ st.write("")
 nav= st.selectbox("Navigation", ["Home", "Job Market Analysis in Lebanon", "Job Information"])
 st.write("")
 st.write("")
-st.image('/Users/user/Desktop/capstone/line_separator.png',width= 1450)
+st.image('line_separator.png',width= 1450)
 
 
 
