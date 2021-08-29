@@ -119,43 +119,13 @@
 
 import streamlit as st
 from multiapp import MultiApp
-from apps import home,customer_dataexp,campaign_metrics, campaign_prediction # importing app modules
-
-## This multi-page app was prepared using the [streamlit-multiapps](https://github.com/upraneelnihar/streamlit-multiapps) framework developed by [Praneel Nihar]
+from apps import home, data_stats # import your app modules here
 
 app = MultiApp()
 
-## Setting the Width (Streamlit Wide Layout is too wide)
-st.markdown(
-        f"""
-<style>
-    .reportview-container .main .block-container{{
-       max-width: {1450}px;
-    }}
-    .reportview-container .main {{
-        color: {'OffBlack'};
-    }}
-</style>
-""",
-        unsafe_allow_html=True,
-    )
-
-## Title
-# st.image('header1.jpeg',width= 1450)
-st.markdown(f"<h1 style='text-align:center;' >{'<b>Decision-Making Web App</b>'}</h1>", unsafe_allow_html=True)
-st.markdown(f"<h3 style='text-align:center;' >{'by Sarah El Moughrabi'}</h3>", unsafe_allow_html=True)
-
-# skipping some lines
-st.write("")
-st.write("")
-st.write("")
-st.write("")
-
-## Adding the Applications
+# Add all your application here
 app.add_app("Home", home.app)
-app.add_app("Job Analysis", job_analysis.app)
-app.add_app("Model", job_information.app)
-
+app.add_app("Data Stats", data_stats.app)
 
 # The main app
 app.run()
