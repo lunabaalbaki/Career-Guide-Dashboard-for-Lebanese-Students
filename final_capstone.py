@@ -63,11 +63,6 @@ df6=pd.read_csv('bright_oulook_onet.csv')
 
 if nav == "Home":
     st.markdown(f"<h2 style='text-align:left; font-family:arial;' >{'<b>Home</b>'} </h2>", unsafe_allow_html=True)
-    df1=pd.read_csv('/Users/user/Desktop/Capstone_datasets/preprocessed_linkedin_jobs_25_08_21.csv')
-    df2=pd.read_csv('/Users/user/Desktop/Capstone_datasets/skill_importance.csv')
-    df3=pd.read_csv('/Users/user/Desktop/Capstone_datasets/tasks.csv')
-    df5=pd.read_csv('/Users/user/Desktop/Capstone_datasets/Detailed_work_activities_tasks.csv')
-    df6=pd.read_csv('/Users/user/Desktop/Capstone_datasets/bright_oulook_onet.csv')
 
 
 
