@@ -1,9 +1,26 @@
 """Frameworks for running multiple Streamlit applications as a single app.
 """
-
 import streamlit as st
 
 class MultiApp:
+    """Framework for combining multiple streamlit applications.
+    Usage:
+        def foo():
+            st.title("Hello Foo")
+        def bar():
+            st.title("Hello Bar")
+        app = MultiApp()
+        app.add_app("Foo", foo)
+        app.add_app("Bar", bar)
+        app.run()
+    It is also possible keep each application in a separate file.
+        import foo
+        import bar
+        app = MultiApp()
+        app.add_app("Foo", foo.app)
+        app.add_app("Bar", bar.app)
+        app.run()
+    """
     def __init__(self):
         self.apps = []
 
@@ -22,13 +39,9 @@ class MultiApp:
         })
 
     def run(self):
-        ## Styling the Navigation Bar, using HTML to center the text, and using beta_columns to center the navigation bar
-        st.markdown(f"<h2 style='text-align:center; color: Teal;' >{'<b>Navigation</b>'}</h2>", unsafe_allow_html=True)
-        col1,col2,col3 = st.beta_columns(3)
-        with col2:
-            app = st.selectbox(
-                '',
-                self.apps,
-                format_func=lambda app: app['title'])
-        st.image('/Users/user/Desktop/capstone/header1.jpg',width= 1450)
+        app = st.sidebar.radio(
+            'Go To',
+            self.apps,
+            format_func=lambda app: app['title'])
+
         app['function']()
