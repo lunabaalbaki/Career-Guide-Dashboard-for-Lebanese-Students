@@ -119,7 +119,7 @@
 
 import streamlit as st
 from multiapp import MultiApp
-from apps import data_stats # import your app modules here
+from apps import data_stats.py  # import your app modules here
 
 app = MultiApp()
 
