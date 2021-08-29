@@ -19,7 +19,7 @@ from PIL import Image
 import plotly.express as px
 
 #Load Data
-df1=pd.read_csv('/Users/user/Desktop/Capstone_datasets/preprocessed_linkedin_jobs_25_08_21.csv')
+df1=pd.read_csv('https://raw.githubusercontent.com/lunabaalbaki/Career-Guide-Dashboard-for-Lebanese-Students/main/preprocessed_linkedin_jobs_25_08_21.csv')
 df2=pd.read_csv('/Users/user/Desktop/Capstone_datasets/skill_importance.csv')
 df3=pd.read_csv('/Users/user/Desktop/Capstone_datasets/tasks.csv')
 df5=pd.read_csv('/Users/user/Desktop/Capstone_datasets/Detailed_work_activities_tasks.csv')
