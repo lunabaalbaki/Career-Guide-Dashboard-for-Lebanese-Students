@@ -32,7 +32,7 @@ st.markdown(
 
 ## Title
 st.image('header1.jpg',width= 1450)
-st.markdown(f"<h1 style='text-align:center;' >{'<b>Career Guide Dashboard</b>'}</h1>", unsafe_allow_html=True)
+st.markdown(f"<h1 style='text-align:center;' >{'<b>Market Driven Career Dashboard for Lebanese workforce</b>'}</h1>", unsafe_allow_html=True)
 st.markdown(f"<h3 style='text-align:center;' >{'by Luna Baalbaki, MSBA student at AUB'}</h3>", unsafe_allow_html=True)
 # st.markdown(f"<h2 style='text-align:center; color: #639262;' >{'<b>Navigation</b>'}</h2>", unsafe_allow_html=True)
 # skipping some lines
