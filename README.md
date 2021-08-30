@@ -6,14 +6,33 @@ Here's the link for the Streamlit WebApp: https://share.streamlit.io/lunabaalbak
 
 Infromation about the above files:
 
-# final_capstone.py: 
+**final_capstone.py:** 
 is the python file for the Streamlit WebApp. It is the file that I used for the public deployment. 
 
-# tasks.csv
+**preprocessed_linkedin_jobs_25_08_21.csv**
+is the CSV file that contains data that I scrapped from LinkedIn about date, location, job title, company of all job positions in Lebanon. Guide on how I scrapped this data is found in linkedin_jobs_in_lebanon_21.ipynb notebook. 
+
+**tasks.csv**
 is the CSV file that I scrapped from O*net website about tasks of different professions: https://www.onetonline.org/
 
-# detailed_work_activities.csv:
+**detailed_work_activities.csv:**
 is the CSV file that I scrapped from O*net website about detailed work activities of different professions: https://www.onetonline.org/
 
-# skills_importance.csv
+**skill_importance.csv**
 is the CSV file that I scrapped from O*net website about skills of different professions: https://www.onetonline.org/
+
+**bright_outlook_onet.csv**
+is the CSV file that I scrapped from O*net website about bright outlook of different professions: https://www.onetonline.org/
+
+**header1.jpg**
+is a picture used as a header in the Streamlit WebApp
+
+**line_seperator**
+is a picture used as a header in the Streamlit WebApp
+
+**README.md**
+is a description of the "Marekt Driven Career Dashboard for Lebanese Students" GitHub project. 
+
+**requirements.txt**
+is a txt file that contains the library used. 
+
