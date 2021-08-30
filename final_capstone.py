@@ -275,29 +275,29 @@ if nav == "Job Market Analysis in Lebanon":
         fig91.update_layout(title= 'Most Demanded Job Positions in Lebanon', yaxis_title='# of Jobs', titlefont_size=24, template = 'plotly_white', xaxis_title= 'Job Positions')
         col1.plotly_chart(fig91)
 
-        with col3:
-                df_sk = st.selectbox('Select a City:', df7['Location'].unique())
-                det45= df7[df7['Location'].str.contains(df_sk)]
-                industop_ = list(det45["Category"].unique())
-                industry_top = []
-                for i in industop_:
-                    x = det45[det45["Location"] == i]
-                sums = sum(x.Count)
-                industry_top.append(sums)
+#         with col3:
+#                 df_sk = st.selectbox('Select a City:', df7['Location'].unique())
+#                 det45= df7[df7['Location'].str.contains(df_sk)]
+#                 industop_ = list(det45["Category"].unique())
+#                 industry_top = []
+#                 for i in industop_:
+#                     x = det45[det45["Location"] == i]
+#                 sums = sum(x.Count)
+#                 industry_top.append(sums)
 
-                data = pd.DataFrame({"industop_": industop_, "industry_top": industry_top})
-                new_index = (data["industry_top"].sort_values(ascending=False)).head(8).index.values
-                sorted_data = data.reindex(new_index)
-                trace1 = go.Bar(
-                               x = sorted_data.industop_,
-                               y = sorted_data.industry_top,
-                               name = "Most Demanded Job Positions in Lebanon",
-                               marker = dict(color = '#77A675',line = dict(color="rgb(2,65,0)",width=1.5)))
-                data = [trace1]
-                layout = dict(title = " ")
-                fig91 = go.Figure(data = data, layout = layout)
-                fig91.update_layout(title= 'Most Demanded Jobs Based on Cities in Lebanon', yaxis_title='# of Jobs', titlefont_size=24, template = 'plotly_white', xaxis_title= 'Job Positions')
-                col3.plotly_chart(fig91)
+#                 data = pd.DataFrame({"industop_": industop_, "industry_top": industry_top})
+#                 new_index = (data["industry_top"].sort_values(ascending=False)).head(8).index.values
+#                 sorted_data = data.reindex(new_index)
+#                 trace1 = go.Bar(
+#                                x = sorted_data.industop_,
+#                                y = sorted_data.industry_top,
+#                                name = "Most Demanded Job Positions in Lebanon",
+#                                marker = dict(color = '#77A675',line = dict(color="rgb(2,65,0)",width=1.5)))
+#                 data = [trace1]
+#                 layout = dict(title = " ")
+#                 fig91 = go.Figure(data = data, layout = layout)
+#                 fig91.update_layout(title= 'Most Demanded Jobs Based on Cities in Lebanon', yaxis_title='# of Jobs', titlefont_size=24, template = 'plotly_white', xaxis_title= 'Job Positions')
+#                 col3.plotly_chart(fig91)
         
         
 if nav == "Job Information":
