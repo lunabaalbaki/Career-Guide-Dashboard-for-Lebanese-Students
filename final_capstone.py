@@ -39,7 +39,7 @@ st.markdown(f"<h3 style='text-align:center;' >{'by Luna Baalbaki, MSBA student a
 st.write("")
 # st.selectbox('Choose page', ('Home','Job Market Analysis in Lebanon', 'Job Information'))
 
-nav= st.selectbox("Navigation", ["Home", "Job Market Analysis in Lebanon", "Job Information"])
+nav= st.selectbox("Navigation", ["Home", "Market Driven Career Dashboard for Lebanese workforce", "Job Information"])
 st.write("")
 st.write("")
 st.image('line_separator.png',width= 1450)
