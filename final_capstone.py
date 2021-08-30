@@ -276,8 +276,8 @@ if nav == "Job Market Analysis in Lebanon":
         col1.plotly_chart(fig91)
 
         with col3:
-                df_sk = st.selectbox('Select a City:', df1['Location'].unique())
-                det45= df1[df1['Location'].str.contains(df_sk)]
+                df_sk = st.selectbox('Select a City:', df7['Location'].unique())
+                det45= df7[df7['Location'].str.contains(df_sk)]
                 industop_ = list(det45["Category"].unique())
                 industry_top = []
                 for i in industop_:
