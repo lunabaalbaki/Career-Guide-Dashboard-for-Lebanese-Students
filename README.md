@@ -6,6 +6,9 @@ Here's the link for the Streamlit WebApp: https://share.streamlit.io/lunabaalbak
 
 Infromation about the above files:
 
+**Luna Baalbaki - MSBA Capstone Final Report - 201802512.pdf**
+is a detailed report about the whole "Marekt Driven Career Dashboard for Lebanese Students" project. It contains introduction, background infromation, methedology, resutls, discussion and conclusion. 
+
 **final_capstone.py:** 
 is the python file for the Streamlit WebApp. It is the file that I used for the public deployment. 
 
