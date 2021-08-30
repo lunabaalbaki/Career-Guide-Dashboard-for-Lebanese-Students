@@ -86,7 +86,7 @@ if nav == "Home":
                 """
     st.markdown(html_title_sec11, unsafe_allow_html=True)
     st.write("")
-    st.markdown(f"<h3 style='text-align:left; font-family:arial;' >{'Selecting the right career is one of the most important decisions students have to make. With the increase in the number of career paths and opportunities, making this decision have become quite difficult. The purpose of this project is to do a job market analysis in Lebanon to provide information about different job trends in Lebanon up-to-date to Lebanese students, so they could form better career choices. Since many         Lebanese students don’t know which major to choose and which job position is highly demanded in Lebanon, this project guides them in their career choice.' }</h3>", unsafe_allow_html=True)
+    st.markdown(f"<h3 style='text-align:left; font-family:arial;' >{'The objective of this project is to help students in Lebanon in choosing their profession through creating a WebApp that allows students to explore job market trends in Lebanon and guide their career choice. Also, to provide them with information about different professions, so that they could be more aware of tasks, skills and detailed work activities for the professions they are considering.' }</h3>", unsafe_allow_html=True)
     st.write("")
     st.write("")
     st.markdown(f"<h3 style='text-align:left; font-family:arial;' >{'Datasets are taken from LinkedIn and O*net websites. You can check the datasets below:' }</h3>", unsafe_allow_html=True)
