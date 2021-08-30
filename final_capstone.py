@@ -285,7 +285,7 @@ if nav == "Job Market Analysis in Lebanon":
                 sums = sum(x.Count)
                 industry_top.append(sums)
 
-                data = pd.DataFrame({"industop_": industop_, "industry_top": industry_top}, index=False)
+                data = pd.DataFrame({"industop_": industop_, "industry_top": industry_top})
                 new_index = (data["industry_top"].sort_values(ascending=False)).head(8).index.values
                 sorted_data = data.reindex(new_index)
                 trace1 = go.Bar(
