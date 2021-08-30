@@ -374,9 +374,7 @@ if nav == "Job Information":
 #skill graph
     df_sk = st.selectbox('Select a Profession:', df2['Profession'].unique())
     det45= df2[df2['Profession'].str.contains(df_sk)]
-    st.write("")
-    st.write("")
-    st.write("")
+    st.subheader('Skill Category by Importance')
     fig341 = go.Figure(data=go.Bar(
                                    x = det45['Skill'],
                                    y=  det45['Importance_n'],
@@ -384,7 +382,7 @@ if nav == "Job Information":
                                    marker = dict(color = '#639262',line = dict(color="rgb(2,65,0)",width=1))))
     fig341.update_layout(margin=dict(l=5,r=5,b=10,t=10))
     fig341.update_layout(width=1000,height=400)
-    fig341.update_layout(title= 'Skill Category by Importance', yaxis_title='Importance of Skill', titlefont_size=24, template = 'plotly_white', xaxis_title= 'Skills')
+    fig341.update_layout(title= '', yaxis_title='Importance of Skill', titlefont_size=24, template = 'plotly_white', xaxis_title= 'Skills')
     
     st.write(fig341)
 # df_task = st.selectbox('Select wedwdkn a Profession:', df3['Profession'].unique())
