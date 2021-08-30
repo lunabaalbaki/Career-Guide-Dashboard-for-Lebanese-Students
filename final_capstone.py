@@ -348,6 +348,7 @@ if nav == "Job Information":
     st.write(fig01)
 
     st.markdown(f"<h3 style='text-align:left; font-family:arial;' >{'Check if the profession that you are looking for has future rapid growth of numerous job openings or neither'}</h3>", unsafe_allow_html=True)
+
 ## Bright bright_outlook_onet
     df_outlook = st.selectbox('Select a Profession:', df6['Professions'].unique())
     deto= df6[df6['Professions'].str.contains(df_outlook)]
@@ -370,6 +371,7 @@ if nav == "Job Information":
         col1,col2,col3,col4,col5 = st.beta_columns([30,5,30,5,30])
         col1.markdown(f"<h3 style='text-align:left; font-family:arial;' >{'Choose a Variable to Explore'}</h3>", unsafe_allow_html=True)
 
+#skill graph
     df_sk = st.selectbox('Select a Profession:', df2['Profession'].unique())
     det45= df2[df2['Profession'].str.contains(df_sk)]
     fig341 = go.Figure(data=go.Bar(
@@ -379,7 +381,8 @@ if nav == "Job Information":
                                    marker = dict(color = '#639262',line = dict(color="rgb(2,65,0)",width=1))))
     fig341.update_layout(margin=dict(l=5,r=5,b=10,t=10))
     fig341.update_layout(width=1000,height=400)
-    #     paper_bgcolor=background_color)
+    fig341.update_layout(title= 'Skill Category by Importance', yaxis_title='Importance of Skill', titlefont_size=24, template = 'plotly_white', xaxis_title= 'Skills')
+    
     st.write(fig341)
 # df_task = st.selectbox('Select wedwdkn a Profession:', df3['Profession'].unique())
 # # st.write(df3[df3['Profession'].str.contains(df_task)])
