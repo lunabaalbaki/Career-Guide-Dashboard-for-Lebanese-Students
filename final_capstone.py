@@ -53,7 +53,7 @@ df2=pd.read_csv('skill_importance.csv')
 df3=pd.read_csv('tasks.csv')
 df5=pd.read_csv('Detailed_work_activities_tasks.csv')
 df6=pd.read_csv('bright_oulook_onet.csv')
-df7=pd.read_csv('cities.csv')
+df7=pd.read_csv('citiess.csv')
 
 
 # st.markdown(f"<h2 style='text-align:left; font-family:arial' >{'<b>Job Analysis in Lebanon Based on LinkedIn Data</b>'}</h2>", unsafe_allow_html=True)
