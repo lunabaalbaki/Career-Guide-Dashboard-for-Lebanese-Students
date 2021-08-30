@@ -53,7 +53,7 @@ df2=pd.read_csv('skill_importance.csv')
 df3=pd.read_csv('tasks.csv')
 df5=pd.read_csv('Detailed_work_activities_tasks.csv')
 df6=pd.read_csv('bright_oulook_onet.csv')
-
+df7=pd.read_csv('cities.csv')
 
 
 # st.markdown(f"<h2 style='text-align:left; font-family:arial' >{'<b>Job Analysis in Lebanon Based on LinkedIn Data</b>'}</h2>", unsafe_allow_html=True)
@@ -277,6 +277,21 @@ if nav == "Job Market Analysis in Lebanon":
 
         st.markdown(html_space1,unsafe_allow_html=True)
 
+        with col3:
+                
+                df_k = st.selectbox('Select Location:', df7['Location'].unique())
+                det5= df7[df7['Location'].str.contains(df_k)]
+                fig31 = go.Figure(data=go.Bar(
+                                               x = det5['Category'],
+                                               y=  det5['Count'],
+                                               name = "Skill Category by Importance",
+                                               marker = dict(color = '#639262',line = dict(color="rgb(2,65,0)",width=1))))
+                fig31.update_layout(margin=dict(l=5,r=5,b=10,t=10))
+                fig31.update_layout(width=1000,height=400)
+    #     paper_bgcolor=background_color)
+                st.write(fig31)
+        
+        
 if nav == "Job Information":
     st.markdown(
             f"""
