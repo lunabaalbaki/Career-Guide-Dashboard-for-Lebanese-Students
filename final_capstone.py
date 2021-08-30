@@ -278,7 +278,7 @@ if nav == "Job Market Analysis in Lebanon":
         with col3:
                 df_sk = st.selectbox('Select a City:', df7['Location'].unique())
                 det45= df7[df7['Location'].str.contains(df_sk)]
-                industop_ = list(det45["Category"].unique())
+                industop_ = list(det45["Location"].unique())
                 industry_top = []
                 for i in industop_:
                     x = det45[det45["Category"] == i]
