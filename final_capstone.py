@@ -374,6 +374,9 @@ if nav == "Job Information":
 #skill graph
     df_sk = st.selectbox('Select a Profession:', df2['Profession'].unique())
     det45= df2[df2['Profession'].str.contains(df_sk)]
+    st.write("")
+    st.write("")
+    st.write("")
     fig341 = go.Figure(data=go.Bar(
                                    x = det45['Skill'],
                                    y=  det45['Importance_n'],
